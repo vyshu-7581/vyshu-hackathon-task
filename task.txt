@@ -1,0 +1,6 @@
+The form collects essential patient details such as name, email, phone number, gender, and date of birth. Patients can also select their department (e.g., Cardiology, Neurology, Pediatrics) and choose a specific doctor from a dropdown list. Additionally, patients can set their preferred appointment date and time and provide a short description of their health concerns.
+
+The form ensures a smooth process for both patients and hospital staff by organizing all the required information in a clear and structured way. With a simple and professional design, it can be integrated into any hospital or clinic website.
+
+
+
