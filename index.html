@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Appointment Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f9ff;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 60%;
+      margin: 40px auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #2a5d84;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+    button {
+      background: #2a5d84;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1d3e5a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Hospital Doctor Appointment Form</h2>
+    <form action="#" method="post">
+      
+      <!-- Patient Information -->
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender" required>
+        <option value="">-- Select Gender --</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <!-- Appointment Details -->
+      <label for="department">Department</label>
+      <select id="department" name="department" required>
+        <option value="">-- Select Department --</option>
+        <option value="cardiology">Cardiology</option>
+        <option value="neurology">Neurology</option>
+        <option value="orthopedics">Orthopedics</option>
+        <option value="pediatrics">Pediatrics</option>
+        <option value="general">General Medicine</option>
+      </select>
+
+      <label for="doctor">Doctor</label>
+      <select id="doctor" name="doctor" required>
+        <option value="">-- Select Doctor --</option>
+        <option value="dr_smith">Dr. John Smith</option>
+        <option value="dr_jones">Dr. Emily Jones</option>
+        <option value="dr_lee">Dr. Michael Lee</option>
+        <option value="dr_khan">Dr. Ayesha Khan</option>
+      </select>
+
+      <label for="date">Preferred Appointment Date</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Preferred Appointment Time</label>
+      <input type="time" id="time" name="time" required>
+
+      <label for="message">Reason for Visit</label>
+      <textarea id="message" name="message" rows="4" placeholder="Describe your health concern"></textarea>
+
+      <!-- Submit -->
+      <button type="submit">Book Appointment</button>
+    </form>
+  </div>
+</body>
+</html>
